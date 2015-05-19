@@ -1,3 +1,13 @@
+
+
+jQuery(function($){
+  $('.du-menu-toggle, .du-menu-overlay').click(function(){
+      // alert(".It's alive!");
+      $('body').toggleClass('du-menu-open');
+  });
+});
+
+
 equalheight = function(container){
 
 var currentTallest = 0,

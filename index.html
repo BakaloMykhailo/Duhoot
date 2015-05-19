@@ -2,6 +2,8 @@
 <html>
 <head lang="en">
 	<title>Duhoot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
 	<meta name="description" content=""/>
 	<meta name="keywords" content=""/>
@@ -10,6 +12,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/layout.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/responsive.css"/>
 
 	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -24,15 +27,20 @@
 	<div class="ba-container cf">
 
 		<a class="du-logo ba-float-left" href="<span id=""></span>">
-			<img src="img/logo.png" alt="Duhoot"/>
+			<img src="img/logo.png" alt="Duhoot" class="logo-big"/>
+			<img src="img/logo-small.png" alt="Duhoot" class="logo-small"/>
 		</a>
 
 		<a href="#" class="du-login ba-float-right">
-			<i class="fa fa-user"></i> LOGIN
+			<i class="fa fa-user"></i> <span>LOGIN<span>
 		</a>
 
 		<a href="#" class="du-search ba-float-right">
 			<i class="fa fa-search"></i>
+		</a>
+
+		<a href="#" class="du-menu-toggle ba-float-right">
+			<i class="fa fa-bars"></i>
 		</a>
 
 		<nav class="ba-float-right">
@@ -47,13 +55,13 @@
 
 	</div>
 </header>
-
+<div class="du-menu-overlay"></div>
 <section class="du-search-row">
 	<div class="ba-container">
 
 		<h2 class="ba-text-center"> What are you looking for?</h2>
 
-		<form action="#" method="post" class="ba-width-1-2 ba-container-center">
+		<form action="#" method="post" class="ba-width-medium-1-2 ba-container-center">
 			<div class="ba-grid du-form-row">
 				<div class="ba-width-1-2">
 					<select name="location" class="ba-width-1-1">
@@ -86,7 +94,7 @@
 <section class="du-filter-row">
 	<div class="ba-container">
 		<div class="ba-grid ba-grid-nopad">
-			<div class="ba-width-1-3">
+			<div class="ba-width-large-1-3">
 
 				<div class="du-filter-items">
 					<a href="#">Recommended</a>
@@ -96,7 +104,7 @@
 
 			</div>
 
-			<div class="ba-width-1-3">
+			<div class="ba-width-large-1-3">
 
 				<div class="du-filter-location ba-text-center">
 					<select name="location">
@@ -110,7 +118,7 @@
 
 			</div>
 
-			<div class="ba-width-1-3">
+			<div class="ba-width-large-1-3">
 
 				<form class="du-filter-type" action="#" method="post">
 
@@ -148,7 +156,7 @@
 <section class="du-item-row">
 	<div class="ba-container container-items">
 		<div class="ba-grid">
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-rent">
 					<a class="du-thumbnail" href="#">
@@ -176,7 +184,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-music">
 					<a class="du-thumbnail" href="#">
@@ -203,7 +211,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-travel">
 					<a class="du-thumbnail" href="#">
@@ -230,7 +238,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-rent">
 					<a class="du-thumbnail" href="#">
@@ -260,7 +268,7 @@
 			</div>
 		</div>
 		<div class="ba-grid">
-			<div class="ba-width-1-2">
+			<div class="ba-width-medium-1-2">
 
 				<div class="du-item du-item-rent du-item-s">
 					<a class="du-thumbnail" href="#">
@@ -290,7 +298,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-2">
+			<div class="ba-width-medium-1-2">
 
 				<div class="du-item du-item-music du-item-s">
 					<a class="du-thumbnail" href="#">
@@ -322,7 +330,7 @@
 			</div>
 		</div>
 		<div class="ba-grid">
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-rent">
 					<a class="du-thumbnail" href="#">
@@ -350,7 +358,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-music">
 					<a class="du-thumbnail" href="#">
@@ -377,7 +385,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-travel">
 					<a class="du-thumbnail" href="#">
@@ -404,7 +412,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-small-1-2 ba-width-large-1-4">
 
 				<div class="du-item du-item-rent">
 					<a class="du-thumbnail" href="#">
@@ -434,7 +442,7 @@
 			</div>
 		</div>
 		<div class="ba-grid">
-			<div class="ba-width-1-2">
+			<div class="ba-width-medium-1-2">
 
 				<div class="du-item du-item-music du-item-s">
 					<a class="du-thumbnail" href="#">
@@ -464,7 +472,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-large-1-4 ba-width-small-1-2">
 
 				<div class="du-item du-item-rent">
 					<a class="du-thumbnail" href="#">
@@ -492,7 +500,7 @@
 				</div>
 
 			</div>
-			<div class="ba-width-1-4">
+			<div class="ba-width-large-1-4 ba-width-small-1-2">
 
 				<div class="du-item du-item-music">
 					<a class="du-thumbnail" href="#">
@@ -536,54 +544,151 @@
 	<div class="ba-row">
 		<h2 class="ba-text-center">What can DuHoot offer to you?</h2>
 		<p class="ba-text-center">Etiam cursus ipsum quis enim faucibus</p>
-		<form class="du-filter-type du-filter-type-big" action="#" method="post">
+		<div class="du-filter-type du-filter-type-big">
 
-			<label class="du-filter-type-rent">
-				<input name="filter-type" type="checkbox" checked/>
-				<i><span></span></i>
-			</label>
-			<label class="du-filter-type-people">
-				<input name="filter-type" type="checkbox"/>
-				<i><span></span></i>
-			</label>
-			<label class="du-filter-type-education">
-				<input name="filter-type" type="checkbox"/>
-				<i><span></span></i>
-			</label>
-			<label class="du-filter-type-music">
-				<input name="filter-type" type="checkbox"/>
-				<i><span></span></i>
-			</label>
-			<label class="du-filter-type-travel">
-				<input name="filter-type" type="checkbox"/>
-				<i><span></span></i>
-			</label>
 
-		</form>
-		<div class="ba-container-form">
-			<div class="ba-grid">
-				<h2 class="ba-text-center">Reality</h2>
-				<div class="ba-width-1-2">
-					<div class="circle"><i class="fa fa-bolt fa-2x"></i></div>
-					<div class="offer-content">
-						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+				<input name="filter-type" type="checkbox" id="tab-1" checked/>
+			<label class="du-filter-type-rent" for="tab-1"><i><span></span></i></label>
+				<input name="filter-type" type="checkbox" id="tab-2"/>
+			<label class="du-filter-type-people" for="tab-2"><i><span></span></i></label>
+				<input name="filter-type" type="checkbox" id="tab-3"/>
+			<label class="du-filter-type-education" for="tab-3"><i><span></span></i></label>
+				<input name="filter-type" type="checkbox" id="tab-4"/>
+			<label class="du-filter-type-music" for="tab-4"><i><span></span></i></label>
+				<input name="filter-type" type="checkbox" id="tab-5"/>
+			<label class="du-filter-type-travel" for="tab-5"><i><span></span></i></label>
+
+
+			<div class="ba-container-form">
+				<div class="ba-grid">
+					<h2 class="ba-text-center">Reality</h2>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-bolt fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-leaf fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
 					</div>
 				</div>
-				<div class="ba-width-1-2">
-					<div class="circle"><i class="fa fa-leaf fa-2x"></i></div>
-					<div class="offer-content">
-						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+				<div class="ba-grid">
+					<h2 class="ba-text-center">Reality</h2>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-bolt fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-leaf fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+				</div>
+				<div class="ba-grid">
+					<h2 class="ba-text-center">Reality</h2>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-bolt fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-leaf fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+				</div>
+				<div class="ba-grid">
+					<h2 class="ba-text-center">Reality</h2>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-bolt fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-leaf fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+				</div>
+				<div class="ba-grid">
+					<h2 class="ba-text-center">Reality</h2>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-bolt fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
+					</div>
+					<div class="ba-width-1-2">
+						<div class="circle"><i class="fa fa-leaf fa-2x"></i></div>
+						<div class="offer-content">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<footer>
+	<div class="ba-row">
+		<div class="ba-container">
+			<h2 class="ba-text-center">Subscribe to our newsletter</h2>
+			<form action="#" method="post">
+				<div class="du-footer-subscribe ba-container-center">
+					<i class="fa fa-envelope-o"></i>
+					<input type="text" placeholder="your@email.com">
+					<button type="button">subscribe</button>
+				</div>
+			</form>
+			<hr>
+			<div class="ba-grid">
+				<div class="ba-width-1-3">
+					<h3>Ipsum quis</h3>
+					<ul>
+						<li><a>Aliquam quis</a></li>
+						<li><a>Pulvinar purus</a></li>
+						<li><a>Etiam cursus</a></li>
+						<li><a>Ipsum quis</a></li>
+						<li><a>Enim faucibus</a></li>
+					</ul>
+				</div>
+				<div class="ba-width-1-3">
+					<h3>Ipsum quis</h3>
+					<ul>
+						<li><a>Aliquam quis</a></li>
+						<li><a>Pulvinar purus</a></li>
+						<li><a>Etiam cursus</a></li>
+						<li><a>Ipsum quis</a></li>
+						<li><a>Enim faucibus</a></li>
+					</ul>
+				</div>
+				<div class="ba-width-1-3">
+					<h3>Follow us</h3>
+					<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+					<a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+					<p>Copyright © All Rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
 
 
 <div id="outdated"></div>
-
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="outdatedbrowser/outdatedbrowser.min.js"></script>
 <script src="js/script.js"></script>
