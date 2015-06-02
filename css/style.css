@@ -98,8 +98,9 @@ button {
 	padding-right: 20px;
 }
 .container-items{
-	width: 980px;
+	max-width: 980px;
 }
+.container-items .ba
 .du-header{
 	background: #ffffff;
 	background: -moz-linear-gradient(left, #ffffff 51%, #E94E38 51%);
@@ -451,9 +452,6 @@ select {
 	padding: 0 15px 15px;
 	line-height: 1.3;
 }
-.du-item-body p{
-
-}
 .du-desc {
 	font-size: 13px;
 	color: #566375;
@@ -539,16 +537,20 @@ select {
 }
 .du-thumbnail .rating-hover{
 	position: absolute;
-	top: 75px;
-	transform: translateX(27%) scale(0.5);
-	-moz-transform: translateX(27%) scale(0.5);
-	-webkit-transform: translateX(27%) scale(0.5);
+	top: 77px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
 	opacity: 0;
 	transition: all 0.5s;
 }
 .du-thumbnail:hover .rating-hover{
 	opacity: 1;
-	transform: translateX(27%) scale(1);
+	transform: scale(1);
 }
 .du-thumbnail .rating-hover i{
 	color: #fff;
@@ -581,6 +583,9 @@ select {
 	position: absolute;
 	bottom: 10px;
 	left: 97px;
+	transform: translateY(-100%) 0.3s;
+	transition: all 0.5s;
+	opacity: 1;
 }
 .du-item-s .du-rating-wrap-thumbnail p{
 	display: inline-block;
@@ -658,11 +663,17 @@ select {
 }
 .offer .ba-container-form{
 	position: relative;
-	width: 800px;
-	height: 190px;
+	max-width: 760px;
 	margin: 0 auto;
 }
-.offer .circle{
+.offer .ba-container-form .ba-grid{
+	margin-left: 0;
+	z-index: 0;
+}
+.offer .ba-grid + .ba-grid{
+
+}
+.offer .circle {
 	display: inline-block;
 	text-align: center;
 	line-height: 70px;
@@ -677,9 +688,22 @@ select {
 .offer .circle:last-child{
 	margin-left: 20px;
 }
+.offer .circle i{
+	display: inline-block;
+	width: 62px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	cursor: pointer;
+	transition: backgroung-color .2s ease-in;
+	background: #1db05e;
+	background-position: none;
+	background-repeat: no-repeat;
+}
 .offer-content{
-	width: 260px;
+	width: 240px;
 	float: left;
+	color: #566375;
 }
 footer h2,
 .offer h2{
@@ -692,20 +716,11 @@ footer h2,
 	line-height: 1;
 	margin-bottom: 70px;
 }
-.offer .ba-container-form .ba-grid{
-	margin-left: 0;
-	position: absolute;
-	opacity: 0;
-	z-index: 0;
-}
-.offer .ba-grid + .ba-grid{
-	margin-top: 0px;
-}
-#tab-1:checked ~ .ba-container-form > .ba-grid:nth-child(1),
-#tab-2:checked ~ .ba-container-form > .ba-grid:nth-child(2),
-#tab-3:checked ~ .ba-container-form > .ba-grid:nth-child(3),
-#tab-4:checked ~ .ba-container-form > .ba-grid:nth-child(4),
-#tab-5:checked ~ .ba-container-form > .ba-grid:nth-child(5){
+#tab-1:checked ~ .ba-container-form > div:nth-of-type(1),
+#tab-2:checked ~ .ba-container-form > div:nth-of-type(2),
+#tab-3:checked ~ .ba-container-form > div:nth-of-type(3),
+#tab-4:checked ~ .ba-container-form > div:nth-of-type(4),
+#tab-5:checked ~ .ba-container-form > div:nth-of-type(5){
 	opacity: 1;
 	z-index: 1;
 }
@@ -722,7 +737,7 @@ footer h2,
 	text-align: center;
 	margin-bottom: 35px;
 }
-.du-filter-type-big i{
+.du-filter-type-big .radio-big{
 	position: relative;
 	width: 103px;
 	height: 103px;
@@ -731,7 +746,7 @@ footer h2,
 	background-color: #f3f1f2;
 	transition: all 0.3s;
 }
-.du-filter-type-big i::after{
+.du-filter-type-big .radio-big::after{
 	content: '';
 	position: absolute;
 	border-top: 2px solid #e2dee0;
@@ -739,7 +754,7 @@ footer h2,
 	top: 50%;
 	right: -60%;
 }
-.du-filter-type-big .du-filter-type-travel i::after{
+.du-filter-type-big .du-filter-type-travel .radio-big::after{
 	border-top: none;
 }
 .du-filter-type-big label{
@@ -750,18 +765,18 @@ footer h2,
 	margin-right: 0px;
 }
 .du-filter-type-big span{
-	margin: 30px auto;
-	display: block;
 	height: 40px;
 	width: 50px;
+	margin: 30px auto;
+	display: block;
 }
 .du-filter-type-big .du-filter-type-rent span {
 	background-image: url('../img/rent-big.png');
 }
 .du-filter-type-big .du-filter-type-people span {
 	background-image: url('../img/people-big.png');
-	width: 38px;
 	height: 45px;
+	width: 38px;
 }
 .du-filter-type-big .du-filter-type-education span {
 	background-image: url('../img/education-big.png');
@@ -837,9 +852,9 @@ footer input[type="email"],
 footer input[type="number"],
 footer input[type="tel"]{
 	color: #fff;
-	width: 490px;
 	height: 62px;
 	padding-left: 70px;
+	padding-right: 209px;
 	border-color: rgba(255, 255, 255, .2);
 	background-color: rgba(255, 255, 255, .1);
 }
@@ -849,7 +864,7 @@ footer button,
 footer .du-button{
 	position: absolute;
 	top: 5px;
-	right: 5px;
+	right: 2px;
 	color: #fff;
 	font-size: 14px;
 	font-weight: 600;
